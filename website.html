@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dia Health One</title>
+    <meta name="description" content="Dia Health One — technical software solutions for type 1 diabetics." />
+    <link rel="preload" href="dia_logo.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header container">
+      <img src="dia_logo.png" alt="Dia Health One logo" class="site-logo" />
+    </header>
+
+    <main class="container">
+      <div id="description-content" class="plain-text">Loading description…</div>
+    </main>
+
+    <footer class="container">
+      © <span id="year"></span> Dia Health One, Inc.
+    </footer>
+
+    <script>
+      // Keep the footer year current without a separate JS file import for this tiny bit
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
